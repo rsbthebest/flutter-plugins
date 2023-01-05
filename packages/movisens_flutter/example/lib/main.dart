@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Movisens Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Movisens Flutter Demo'),
     );
   }
 }
@@ -47,9 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // The name of your device
   // Due to iOS using generated UUIDs instead of MAC addresses,
-  // this is the only way to connect to the device
-  String deviceName = "xxx"; // Example: "MOVISENS Sensor 04421"
-
+  // this is the only way to connect to the device.
+  // Example: "MOVISENS Sensor 04421".
+  String deviceName = "MOVISENS Sensor 03623";
   void connect() async {
     await device.connect();
 
